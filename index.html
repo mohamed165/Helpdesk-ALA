@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="David Mesman">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/scrolling-nav.css">
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/scrolling-nav.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script src="js/start.js"></script>
+		<script src="js/internet.js"></script>
+		<script src="js/ibellen.js"></script>
+		<script src="js/tvibellen.js"></script>
+		<title>Helpdesk</title>
+	</head>
+	<body id="page-top">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<a class="navbar-brand page-scroll" style="color:white;" href="#page-top">Help<b>Task</b></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a class="page-scroll" style="color:white;" href="#page-top">Home</a></li>
+					<li><a class="page-scroll" style="color:white;" href="#helpdesk">Helpdesk</a></li>
+					<li><a class="page-scroll" style="color:white;" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section id="intro" class="home-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>Home</h1>
+						<p>
+							Welkom bij de helpdesk app van <b>Help Task</b><br><br><br>
+							<img id="logo" src="img/logo.png">
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="helpdesk" class="helpdesk-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>Helpdesk</h1><br>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-lg-6">
+							<p><b>Stel de vragen die verschijnen na het starten van het gesprek aan de klant.</b></p><br>
+							<input type="button" style="margin-top:20px;" class="btn btn-success" onclick="start()" value="Start gesprek"><br><br>
+						</div>
+					<div class="col-lg-6">
+						<p><b>Over het welk abonnement heeft de klant een klacht/vraag?</b></p><br><br>
+						<center>
+							<table>
+								<tr>
+									<td><input style="margin-right:10px;" type="button" class="btn btn-primary" onclick="internet()" value="Internet"></td>
+									<td><input style="margin-right:10px;" type="button" class="btn btn-primary" onclick="ibellen()" value="Internet en Telefonie"></td>
+									<td><input type="button" class="btn btn-primary" onclick="tvibellen()" value="TV, Internet en Telefonie"></td>
+								</tr>
+							</table>
+						</center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<p id="msg"></p>
+						<p id="msg2"></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<br>
+						<form>
+							<fieldset>
+								<legend id="intlegend"></legend>
+								<p id="browsen"></p>
+								<p id="b_oplossing"></p>
+								<p id="laden"></p>
+								<p id="l_oplossing"></p>
+							</fieldset>
+						</form>
+					</div>
+					<div class="col-lg-4">
+						<br>
+						<form>
+							<fieldset>
+								<legend id="ilegend"></legend>
+								<p id="kiestoon"></p>
+								<p id="k_oplossing"></p>
+								<p id="gebeld"></p>
+								<p id="g_oplossing"></p>
+								<p id="mobiel"></p>
+								<p id="m_oplossing"></p>
+							</fieldset>
+						</form>
+					</div>
+					<div class="col-lg-4">
+						<br>
+						<form>
+							<fieldset>
+								<legend id="tvilegend"></legend>
+								<p id="aantal"></p>
+								<p id="splitter"></p>
+								<p id="s_oplossing"></p>
+								<p id="setupbox"></p>
+								<p id="setup_oplossing"></p>
+								<p id="zenders"></p>
+								<p id="z_oplossing"></p>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+			<section id="contact" class="contact-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>Contact</h1>
+							<form class="form" name="contact">
+								<table class="table">
+									<tr>
+										<td><b>Naam:</b></td>
+										<td><input type="text" class="form-control"></td>
+									</tr>
+									<tr>
+										<td><b>E-mail:</b></td>
+										<td><input type="mail" class="form-control"></td>
+									</tr>
+									<tr>
+										<td><b>Bericht:</b></td>
+										<td><textarea id="bericht" class="form-control"></textarea></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="submit" class="btn btn-primary" value="Verstuur"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
