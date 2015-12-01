@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="David Mesman">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/bootstrap/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/helpdesk/start.js"></script>
+		<script src="js/helpdesk/internet.js"></script>
+		<script src="js/helpdesk/ibellen.js"></script>
+		<script src="js/helpdesk/tvibellen.js"></script>
+		<title>Helpdesk</title>
+	</head>
+	<body id="page-top">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" style="color:white;" href="#page-top">Help<b>Task</b></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a style="color:white;" href="home.html"><i class="fa fa-home"></i> Home</a></li>
+				<li class="active"><a style="color:white;" href="helpdesk.html"><i class="fa fa-phone"></i> Helpdesk Hulp</a></li>
+				<li><a style="color:white;" href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+				<center>
+					<table style="margin-top:75px;">
+						<tr>
+							<td><img class="logo" width="100" height="150" src="img/logo.png"></td>
+							<td><h1>&nbspHelpdesk</h1></td>
+						</tr>
+					</table><br>
+						<input type="button" style="margin-top:20px;margin-left:-10%;" class="btn btn-success" onclick="start()" value="Start gesprek">
+						<input type="button" style="margin-top:20px;" class="btn btn-primary" onclick="window.location.reload()" value="Maak leeg"><br><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12" style="text-align:center;">
+						<p id="msg"></p>
+						<p id="msg2"></p>
+					</div>
+				</div>
+					<div class="col-lg-6" id="output">
+					</div>
+					<div class="col-lg-6">
+						<br>
+						<input type="button" class="btn btn-primary" onclick="internet()" value="Internet"><br><br>
+						<input type="button" class="btn btn-primary" onclick="ibellen()" value="Internet en Telefonie"><br><br>
+						<input type="button" class="btn btn-primary" onclick="tvibellen()" value="TV, Internet en Telefonie">
+					</div>
+				</div>
+			</div>
+		<div class="nav navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p style="color:#fff;" class="navbar-text pull-left">Site built by David Mesman</p>
+			</div> <!-- End of container -->
+		</div> <!-- End of nav -->
+	</body>
+</html>
